@@ -1,0 +1,34 @@
+{
+  "name": "test-client",
+  "version": "0.0.1",
+  "description": "A minimal client demonstrating direct usage of the HTTP stream sync API.",
+  "main": "dist/index.js",
+  "bin": "dist/bin.js",
+  "type": "module",
+  "scripts": {
+    "fetch-operations": "tsc -b && node dist/bin.js fetch-operations",
+    "generate-token": "tsc -b && node dist/bin.js generate-token",
+    "concurrent-connections": "tsc -b && node dist/bin.js concurrent-connections",
+    "format": "prettier --write .",
+    "build": "tsc -b",
+    "clean": "rm -rf ./dist && tsc -b --clean"
+  },
+  "author": "Michael Barnes",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/rsocket-websocket-client": "^0.0.7",
+    "@types/ws": "^8.18.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@powersync/service-core": "^1.14.0",
+    "commander": "^14.0.0",
+    "jose": "^6.0.13",
+    "rsocket-core": "1.0.0-alpha.3",
+    "rsocket-websocket-client": "1.0.0-alpha.3",
+    "ws": "^8.18.3",
+    "yaml": "^2.8.1"
+  }
+}
