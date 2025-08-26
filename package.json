@@ -13,8 +13,8 @@
     "build": "tsc -b",
     "clean": "rm -rf ./dist && tsc -b --clean"
   },
-  "author": "Michael Barnes",
-  "license": "Apache-2.0",
+  "author": "JourneyApps Platform",
+  "license": "FSL-1.1-ALv2",
   "devDependencies": {
     "@types/node": "^24.3.0",
     "@types/rsocket-websocket-client": "^0.0.7",
